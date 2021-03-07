@@ -1,5 +1,4 @@
 from flask import Flask, request, render_template
-from flask_cors import CORS
 import pickle
 
 import matplotlib.pyplot as plt
@@ -53,7 +52,7 @@ def predict():
 #     fig, ax = plt.subplots()
 #     ax.plot(dates, sentiment, color='blue', label="Historical")
 
-#     predict_date = datetime.timedelta(days=1)
+#     predict_date = datetime.datetime.today().date()
 #     ax.scatter(predict_date, prediction, color='red', label="Prediction")
 
 #     ax.plot([dates[-1], predict_date], [sentiment[-1], prediction], color='red')
